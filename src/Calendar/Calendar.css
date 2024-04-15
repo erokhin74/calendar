@@ -1,0 +1,4 @@
+.calendar-root {
+  height: calc(100vh - 100px);
+  width: calc(100vw - 300px);
+}
