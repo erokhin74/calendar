@@ -1,0 +1,8 @@
+.dateHeader-root {
+  padding: 0 5px;
+  display: flex;
+  justify-content: space-between;
+  >button {
+    font-size: 18px;
+  }
+}

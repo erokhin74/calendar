@@ -1,0 +1,42 @@
+.rbc-event {
+  padding: 2px;
+  background: none;
+
+  &.rbc-event-selected {
+    background: none;
+  }
+
+  .rbc-event-label {
+    display: none;
+  }
+}
+
+.event-root {
+  padding: 5px 10px 0 10px;
+  border-radius: 4px;
+  color: black;
+
+  .event-header {
+    display: flex;
+    justify-content: space-between;
+
+    .event-title {
+      font-size: 16px;
+      font-weight: 500;
+    }
+
+    .event-actions {
+      font-weight: 500;
+      color: blue;
+      cursor: pointer;
+    }
+  }
+
+  .event-body {
+    font-size: 14px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+
+  }
+}

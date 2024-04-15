@@ -1,0 +1,41 @@
+.rbc-event {
+  padding: 2px;
+  background: none;
+
+  &.rbc-month-bg-event-selected {
+    background: none;
+  }
+
+  .rbc-month-bg-event-label {
+    display: none;
+  }
+}
+
+.month-bg-event-root {
+  margin: 23px 2px 2px 2px;
+  padding: 5px 10px 0 10px;
+  border-radius: 4px;
+  color: black;
+
+  .month-bg-event-header {
+    display: flex;
+    justify-content: space-between;
+
+    .month-bg-event-title {
+      font-size: 16px;
+      font-weight: 500;
+    }
+
+    .month-bg-event-actions {
+      font-weight: 500;
+      color: blue;
+      cursor: pointer;
+    }
+  }
+
+  .month-bg-event-body {
+    font-size: 14px;
+    text-align: left;
+    overflow: hidden;
+  }
+}
