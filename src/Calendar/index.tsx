@@ -9,7 +9,7 @@ import 'react-big-calendar/lib/css/react-big-calendar.css';
 
 import DateHeader from './DateHeader';
 import CustomEvent from './Event';
-import MonthBgEvent from './Event/MonthBgEvent';
+import CustomMonthView from './MonthView';
 import { MESSAGES } from './constants/messages';
 import { updateDateEventMap } from './dateEventMap';
 import { EVENTS } from './events';
@@ -25,20 +25,17 @@ moment.locale("ru-RU");
 // 	}
 // });
 
-const localizer = momentLocalizer(moment) // or globalizeLocalizer
+const localizer = momentLocalizer(moment)
 
 const COMPONENTS = {
   month: {
     dateHeader: DateHeader
   },
-  event: CustomEvent,
-  dateCellWrapper: MonthBgEvent
+  event: CustomEvent
 };
 
 const VIEWS = {
-  // month: CustomMonthView as (ComponentType<any> & ViewStatic),
-  // month: CustomMonthView as (ComponentClass<any, any> & ViewStatic),
-  month: true,
+  month: CustomMonthView,
   week: true,
   day: true,
   agenda: true
@@ -70,7 +67,6 @@ export const Calendar = () => {
           startAccessor="start"
           endAccessor="end"
           // toolbar={false}
-          // showAllEvents={true}
         />
       </div>
     </Store.Provider>

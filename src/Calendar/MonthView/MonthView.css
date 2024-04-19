@@ -1,0 +1,16 @@
+.rbc-header {
+  padding: 0;
+  &:not(:nth-child(6)):not(:nth-child(7)) {
+    flex: 2 0;
+  }
+}
+.rbc-day-bg {
+  &:not(:nth-child(6)):not(:nth-child(7)) {
+    flex: 2 0;
+  }
+}
+.rbc-date-cell {
+  &:not(:nth-child(6)):not(:nth-child(7)) {
+    flex: 2 0;
+  }
+}
